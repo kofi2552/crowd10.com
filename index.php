@@ -11,7 +11,8 @@
   <link rel="stylesheet" type="text/css" href="components/navbar/style_nav.css" />
   <link rel="stylesheet" type="text/css" href="components/footer/style_fot.css" />
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <title>Crowd10 - Home</title>
+  <title>Crowd10 - REMC</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
 
@@ -22,9 +23,16 @@
    
    <section class="hero-section">
    <div class="container-fliud">
-   <div class="mobile-show"  style="padding: 10px;">
+    <div class="mob-relative">
+        <div class="mobile-show"  style="padding: 10px;">
           <img src="images/Rectangle 9.png"/>
         </div>
+        <div class="mo-hero-circle">
+        <svg class="arrow" width="60" height="74" viewBox="0 0 60 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M29.8412 72.3481V2.20786M1.64326 41.6617L29.8412 72.3481L58.0391 41.6617" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div> 
     <div class="row" id="home-top">
       <div class="col-md-6 left hero-content">
         <!-- Left Div Content -->
@@ -36,17 +44,21 @@
       </div>
       <div class="col-md-6 right hero-content">
         <!-- Right Div Content -->
+        <div class="desk-relative">
         <div class="desktop-show" style="padding: 20px;">
           <img src="images/Rectangle 9.png"/>
         </div>
-      </div>
-    </div>
-    <div>
-      <div class="hero-circle">
+        <div class="hero-circle">
         <svg class="arrow" width="60" height="74" viewBox="0 0 60 74" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M29.8412 72.3481V2.20786M1.64326 41.6617L29.8412 72.3481L58.0391 41.6617" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
+        </div>
+        
+      </div>
+    </div>
+    <div>
+      
     </div>
   </div>
    </section>

@@ -6,19 +6,25 @@
 
 body {
   background-color: #1f242a;
+  font-family: "Work Sans", sans-serif;
 }
 
 .hero-section {
-  position: relative;
+  width: 100%;
   padding-top: 60px;
 }
 
-.hero-section .mobile-show {
+.hero-section .desk-relative {
+  position: relative;
+}
+
+.hero-section .mob-relative {
+  position: relative;
   display: none;
 }
 
 .container-fliud {
-  padding: 20px 10% !important;
+  padding: 20px 10%;
 }
 
 .strt-btn {
@@ -35,20 +41,38 @@ body {
 
 .hero-circle {
   position: absolute;
-  bottom: 35px;
-  right: 41%;
-  width: 192px;
-  height: 192px;
-  background: #3cc6f2;
-  border-radius: 9999px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 210px;
+  height: 210px;
+  background-image: url("images/arw_dwn.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: -40px;
+  margin-left: -80px;
+}
+
+.mo-hero-circle {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background-image: url("images/arw_dwn.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .hero-circle .arrow {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 56px;
-  height: 90px;
+  height: 100%;
+  bottom: -55%;
 }
 
 /*---------- Mobile responsive for hero section ---------*/
@@ -57,12 +81,20 @@ body {
   .hero-section {
     padding: 30px 10px;
   }
-  .hero-section .mobile-show {
-    display: block;
+
+  .hero-section .container-fliud {
+    padding: 20px 10px !important;
+  }
+  .hero-section .mob-relative {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   .hero-section .right {
     display: none;
   }
+
   .hero-section .hero-content {
     width: 100%;
   }
@@ -71,15 +103,17 @@ body {
     max-width: 500px;
     object-fit: contain;
   }
-  .hero-circle {
-    top: 22%;
-    right: 41%;
-    width: 80px;
-    height: 80px;
+  .mo-hero-circle {
+    margin-bottom: -50px !important;
   }
-  .hero-circle .arrow {
-    width: 30px;
+
+  .mo-hero-circle .arrow {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
     height: 100%;
+    bottom: -55% !important;
   }
   .hero-section .strt-btn {
     margin-top: 20px;
