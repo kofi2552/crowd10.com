@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/rcd6td45awd8/public_html/crowd-10.com
+    - /bin/cp -a * $DEPLOYPATH
