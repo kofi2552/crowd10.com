@@ -1,0 +1,66 @@
+.footer-section {
+  position: relative;
+  padding-top: 120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-section h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.footer-section p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.footer-section a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.footer-section .foot-1,
+.foot-2,
+.foot-3 {
+  padding: 30px 0;
+}
+
+.footer-section .foot-down {
+  padding-top: 100px;
+}
+
+.footer-section .foot-down .foot-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section .foot-down .foot-links a {
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 30px;
+}
+
+.footer-section .foot-down p {
+  text-align: right;
+}
+
+/*---------- Mobile responsive for hero section ---------*/
+
+@media screen and (max-width: 768px) {
+  .footer-section .foot-down .foot-links {
+    justify-content: unset !important;
+  }
+  .footer-section .foot-down p {
+    text-align: left;
+  }
+  .footer-section .foot-down .foot-links a {
+    margin-right: 16px;
+  }
+  .footer-section .foot-down {
+    padding-top: 20px;
+  }
+}

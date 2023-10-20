@@ -1,0 +1,147 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  padding: 20px 10%;
+  background-color: #1f242a;
+}
+
+.logo {
+  cursor: pointer;
+  /* background-color: #1c579e; */
+}
+
+.logo img {
+  width: 160px;
+  object-fit: cover;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  /* background-color: #be0d42; */
+}
+
+.nav__links li {
+  line-height: 20px;
+  padding: 0px 16px;
+  padding-top: 10px;
+  list-style: none;
+}
+
+.nav__links li a {
+  line-height: 18px;
+  transition: color 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  /* background-color: #24252a; */
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 70%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.overlay a {
+  padding: 10px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 40px;
+  color: #0088a9;
+}
+
+.overlay__content {
+  padding-top: 100px;
+}
+.overlay__content li {
+  list-style: none;
+}
+.overlay__content a {
+  font-size: 18px;
+  color: #1f242a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 10px;
+    right: 25px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
