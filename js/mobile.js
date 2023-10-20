@@ -18,17 +18,25 @@ let openIndex = -1; // Initially, no accordion is open
 
 for (let i = 0; i < accordionButtons.length; i++) {
   accordionButtons[i].addEventListener("click", () => {
-    if (openIndex !== -1) {
-      // Close the previously opened accordion
-      hiddenDivs[openIndex].classList.remove("show");
-      accordionButtons[openIndex].classList.remove("open");
-      accorDions[openIndex].classList.remove("active");
-    }
+    if (i === openIndex) {
+      // If the clicked accordion is already open, close it
+      hiddenDivs[i].classList.remove("show");
+      accordionButtons[i].classList.remove("open");
+      accorDions[i].classList.remove("active");
+      openIndex = -1; // No accordion is open
+    } else {
+      // Close the previously opened accordion (if any)
+      if (openIndex !== -1) {
+        hiddenDivs[openIndex].classList.remove("show");
+        accordionButtons[openIndex].classList.remove("open");
+        accorDions[openIndex].classList.remove("active");
+      }
 
-    // Open the clicked accordion
-    hiddenDivs[i].classList.toggle("show");
-    accordionButtons[i].classList.toggle("open");
-    accorDions[i].classList.add("active"); // Add the "active" class
-    openIndex = i;
+      // Open the clicked accordion
+      hiddenDivs[i].classList.add("show");
+      accordionButtons[i].classList.add("open");
+      accorDions[i].classList.add("active");
+      openIndex = i;
+    }
   });
 }

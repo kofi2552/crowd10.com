@@ -18,13 +18,18 @@ body {
   position: relative;
 }
 
+.hero-section .desktop-show img {
+  width: 100%;
+  max-width: 800px;
+}
+
 .hero-section .mob-relative {
   position: relative;
   display: none;
 }
 
 .container-fliud {
-  padding: 20px 10%;
+  padding: 20px 8%;
 }
 
 .strt-btn {
@@ -153,6 +158,7 @@ body {
 @media screen and (max-width: 768px) {
   .counter-main-content {
     flex-direction: column !important;
+    gap: 40px;
   }
 }
 
@@ -168,12 +174,26 @@ body {
 }
 
 .approach-section .box:hover {
-  background: rgba(60, 198.32, 242, 0.15);
+  background: #0e556d17;
+  border-radius: 10px;
+}
+
+.approach-section .active {
+  background: #3cc6f226;
   border-radius: 10px;
 }
 
 .approach-section #appr-head {
   margin-top: 80px;
+}
+
+/*---------- Mobile responsive for approach section ---------*/
+
+@media screen and (max-width: 768px) {
+  .approach-section .row {
+    flex-direction: column !important;
+    gap: 40px;
+  }
 }
 
 .belt-section {
@@ -184,6 +204,13 @@ body {
   background-repeat: no-repeat;
   height: 250px;
   margin: 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .belt-section {
+    height: 150px;
+    margin: 30px 0 !important;
+  }
 }
 
 .whyC10-section {

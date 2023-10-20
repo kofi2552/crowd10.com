@@ -37,7 +37,7 @@
       <div class="col-md-6 left hero-content">
         <!-- Left Div Content -->
         <div class="mt-5" style="color: white; padding: 20px;" >
-        <div style="width: 100%; height: 100%"><span style="color: white; font-size: 48px; font-family: Work Sans; font-weight: 700; line-height: 58px; word-wrap: break-word">We Are A Crowd Based<br/></span><span style="color: #3CC6F2; font-size: 48px; font-family: Work Sans; font-weight: 700; line-height: 58px; word-wrap: break-word">Real Estate Marketing</span><span style="color: white; font-size: 48px; font-family: Work Sans; font-weight: 700; line-height: 58px; word-wrap: break-word"> Community<br/></span></div>
+        <div style="width: 100%; color: white; font-size: 48px; font-weight: 700; line-height: 58px;">We Are A Crowd Based <span style="color: #3CC6F2">Real Estate Marketing</span> Community</div>
           <p class="mt-3">A marketing community established to raise passionate and discipline entrepreneurs from age 18 and above to create wealth in the current era through real estate.</p>
         <button class="strt-btn">Get Started</button>
         </div>
@@ -91,8 +91,7 @@
 
    <section class="approach-section">
      <div class="section-heading">
-       <h1><span style="color: white; font-size: 48px; font-family: Work Sans; font-weight: 700; line-height: 58px; word-wrap: break-word">Our Approach in<br/></span>
-       <span style="color: #3CC6F2; font-size: 48px; font-family: Work Sans; font-weight: 700; line-height: 58px; word-wrap: break-word">3 Simple Steps</span></h1>
+       <h1 style="color: white; font-size: 48px; font-weight: 700; line-height: 58px; word-wrap: break-word">Our Approach in <span style="color: #3CC6F2;">3 Simple Steps</span></h1>
       </div>
       <div class="container-fliud" id="appr-head">
             <div class="row">
@@ -105,7 +104,7 @@
                   </div>
 
                   <div class="col-md-4">
-                  <div class="box" style="padding: 20px;">
+                  <div class="box active" style="padding: 20px;">
                   <h1 class="text-center" style="color: white; font-size: 32px; font-weight: 700; line-height: 47px; word-wrap: break-word">Invest</h1>
                     <p style="text-align: center; color: white; font-size: 16px; font-family: Work Sans; font-weight: 400; line-height: 31.50px; word-wrap: break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis maecenas eget aliquam ipsum neque interdum iaculis non.</p>
                   </div>
@@ -126,8 +125,7 @@
 
     <section class="whyC10-section">
      <div class="section-heading">
-       <h1><span style="color: white; font-size: 48px; font-family: Work Sans; font-weight: 700; line-height: 58px; word-wrap: break-word">Why Crowd10 and<br/></span>
-       <span style="color: #3CC6F2; font-size: 48px; font-family: Work Sans; font-weight: 700; line-height: 58px; word-wrap: break-word">Real Estate?</span></h1>
+       <h1 style="color: white; font-size: 48px; font-weight: 700; line-height: 58px; word-wrap: break-word">Why Crowd10 and <span style="color: #3CC6F2;">Real Estate?</span></h1>
       </div>
 
       <div class="container-fliud">
