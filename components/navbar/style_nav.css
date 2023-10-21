@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center !important;
-  padding: 20px 7%;
+  padding: 20px 9%;
   background-color: #1f242a;
 }
 
@@ -51,15 +51,21 @@ header {
 
 .cta {
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: #0088a9;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease 0s;
+  text-decoration: none;
+}
+
+header .cta {
+  text-decoration: none;
 }
 
 .cta:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  color: #fff;
+  background-color: #ffa31a;
 }
 
 /* Mobile Nav */
@@ -137,11 +143,21 @@ header {
 }
 
 @media only screen and (max-width: 800px) {
+  header {
+    padding: 8px 18px !important;
+  }
   .nav__links,
   .cta {
     display: none;
   }
-  .menu {
+  header .menu {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
     display: initial;
+    margin-bottom: 0 !important;
+  }
+  header .menu i {
+    line-height: 48px;
   }
 }

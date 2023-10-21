@@ -5,21 +5,21 @@
             <div class="col-md-4">
                 <div class="foot-1">
                     <h3>Do you want more information?</h3>
-                    <p>Lorem ipsum dolor sit amet, con adipiscing elit. Duis convallis maecenas eget aliquam interdum iaculis non.</p>
+                    <p>Aside the above options, you can also contact us by visiting our office at Adenta Ritz junction ( just a minute away from Chickenman-Pizzaman).</p>
                     <a href="#">Contact us <img src="/images/arrow-right.svg"/></a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="foot-2">
-                    <h3>Do you want more information?</h3>
-                    <p>Lorem ipsum dolor sit amet, con adipiscing elit. Duis convallis maecenas eget aliquam interdum iaculis non.</p>
+                    <h3>Do you want our product?</h3>
+                    <p>We have a pletora of real estate products ready for sale to potential buyers.</p>
                     <a href="#">Check now <img src="/images/arrow-right.svg"/></a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="foot-3">
-                    <h3>Do you want more information?</h3>
-                    <p>Lorem ipsum dolor sit amet, con adipiscing elit. Duis convallis maecenas eget aliquam interdum iaculis non.</p>
+                    <h3>Want to  connect with us?</h3>
+                    <p>Join our social media handles our consider becoming part of our community.</p>
                     <a href="#">Join us <img src="/images/arrow-right.svg"/></a>
                 </div>
             </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="col-md-4">
                 <div class="foot-down">
-                    <p>Copyright 2023</p>
+                    <p>Copyright &#169; 2023</p>
                 </div>
             </div>
         </div>

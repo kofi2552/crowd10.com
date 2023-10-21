@@ -88,7 +88,7 @@ body {
   }
 
   .hero-section .container-fliud {
-    padding: 20px 10px !important;
+    padding: 20px 7px !important;
   }
   .hero-section .mob-relative {
     display: flex;
@@ -225,8 +225,12 @@ body {
   padding-bottom: 60px;
 }
 
-.whyC10-section .accordion {
+.whyC10-section .accordion.fac {
   border-top: 0.5px solid #f5f5f560;
+}
+
+.whyC10-section .accordion.mac {
+  /* border-top: 0.5px solid #f5f5f560; */
   border-bottom: 0.5px solid #f5f5f560;
 }
 
@@ -290,17 +294,22 @@ body {
 }
 
 .whyC10-section .accordion .accordion-button svg {
+  color: #2d353d !important;
   width: 60px;
   height: 60px;
 }
 
 .whyC10-section .accordion #element1 {
-  fill: #fff !important;
-  color: #fff !important;
-  margin-right: 80px;
+  fill: #96a5b4 !important;
 }
 
-.whyC10-section .accordion:hover {
+.whyC10-section .accordion h4 {
+  color: #fff;
+  width: 100%;
+  max-width: 150px;
+}
+
+.whyC10-section .accordion.mac:hover {
   background-color: #c0e4e311 !important;
   border-bottom: 1px solid #3cc6f2 !important;
 }
@@ -316,7 +325,8 @@ body {
 }
 
 .whyC10-section .accordion .left .box {
-  margin-right: 80px;
+  width: 100%;
+  max-width: 320px;
 }
 
 .whyC10-section .accordion.active {
@@ -331,20 +341,37 @@ body {
 /*---------- Mobile responsive for accordion section ---------*/
 
 @media screen and (max-width: 768px) {
-  .whyC10-section .accordion #element1 {
+  .whyC10-section .accordion h4 {
     color: #fff;
-    margin-right: 20px;
+    width: 100%;
+    max-width: 50px;
+    text-align: left;
+    margin-right: 10px;
   }
 
   .whyC10-section .accordion .right .box {
     display: none;
   }
 
+  .whyC10-section .accordion .left .box {
+    margin-right: 5px;
+  }
+
+  .whyC10-section #hiddenDiv {
+    padding: 20px 10px !important;
+  }
+
   .whyC10-section #hiddenDiv p {
-    margin-left: 65px;
+    margin: 0px 20px;
   }
 
   .whyC10-section .accordion .left {
     justify-content: space-around !important;
   }
+}
+
+.earn-section {
+  position: relative;
+  padding: 100px 0;
+  width: 100%;
 }
