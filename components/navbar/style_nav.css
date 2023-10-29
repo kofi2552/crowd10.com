@@ -3,10 +3,10 @@ header {
   justify-content: space-between;
   align-items: center !important;
   padding: 20px 9%;
-  background-color: #1f242a;
+  /* background-color: #1f242a; */
 }
 
-.logo {
+.navigate .logo {
   cursor: pointer;
   /* background-color: #1c579e; */
 }
@@ -16,57 +16,70 @@ header {
   object-fit: cover;
 }
 
-.nav__links a,
-.cta,
-.overlay__content a {
+.navigate .nav__links a,
+.navigate .overlay__content a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #edf0f1;
-
   text-decoration: none;
 }
 
-.nav__links {
+.navigate .nav__links {
   list-style: none;
   display: flex;
   /* background-color: #be0d42; */
 }
 
-.nav__links li {
+.navigate .nav__links li {
   line-height: 20px;
   padding: 0px 16px;
-  padding-top: 10px;
+  padding-top: 14px;
   list-style: none;
 }
 
-.nav__links li a {
+.navigate .nav__links li a {
+  font-size: 14px;
+  text-transform: uppercase;
   line-height: 18px;
   transition: color 0.3s ease 0s;
   text-decoration: none;
 }
 
-.nav__links li a:hover {
+.navigate .nav__links li a:hover {
   color: #0088a9;
 }
 
-.cta {
+.navigate .cta {
+  color: #fff;
+  font-size: 16px !important;
   padding: 9px 25px;
-  background-color: #0088a9;
+  /* background-color: #0088a9; */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 182, 72, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease 0s;
+  cursor: pointer !important;
   text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
-header .cta {
-  text-decoration: none;
+.navigate .cta:hover {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 182, 72, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  box-shadow: 2px 2px 0 #dae5f0;
+  /* box-shadow: 4px 4px 0 #007bff; */
 }
 
-.cta:hover {
+/* .cta:hover {
   color: #fff;
   background-color: #ffa31a;
-}
+} */
 
 /* Mobile Nav */
 
@@ -78,7 +91,7 @@ header .cta {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   left: 0;
   top: 0;
   background-color: #fff;
@@ -88,7 +101,7 @@ header .cta {
 }
 
 .overlay--active {
-  width: 70%;
+  width: 100%;
 }
 
 .overlay__content {
@@ -146,8 +159,10 @@ header .cta {
   header {
     padding: 8px 18px !important;
   }
-  .nav__links,
-  .cta {
+  .navigate .nav__links {
+    display: none;
+  }
+  .navigate .cta {
     display: none;
   }
   header .menu {

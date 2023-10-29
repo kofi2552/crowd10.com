@@ -5,22 +5,89 @@
 }
 
 body {
-  background-color: #1f242a;
+  background-color: #191e24;
+  /* background-color: #1f242a; */
   font-family: "Work Sans", sans-serif;
 }
 
-.hero-section {
-  width: 100%;
-  padding-top: 60px;
+.container-fliud {
+  padding: 20px 8%;
 }
 
-.hero-section .desk-relative {
+main {
+  width: 100%;
+  /* background-color: #093746; */
+  background-image: url("images/herobg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero-section {
+  height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #fff; /* Default color of stars */
+  border-radius: 50%;
+  opacity: 0; /* Initially invisible */
+  animation: twinkling 3s infinite; /* Add a twinkle animation */
+  z-index: 30;
+}
+
+.hero-section .hero {
+  z-index: 70;
+}
+
+@keyframes twinkling {
+  0%,
+  100% {
+    opacity: 0; /* Invisible */
+  }
+  50% {
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.hero-section .hero {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-section .hero-content {
+  flex: 1;
+}
+
+.hero-section .left {
+  padding: 20px 9%;
+  z-index: 88;
+}
+
+.hero-section .left .text-content {
+  padding-top: 120px;
+}
+
+.hero-section .right {
+  /* background-color: #e4b978; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 !important;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
 }
 
 .hero-section .desktop-show img {
   width: 100%;
-  max-width: 800px;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-section .mob-relative {
@@ -28,23 +95,28 @@ body {
   display: none;
 }
 
-.container-fliud {
-  padding: 20px 8%;
-}
-
-.strt-btn {
-  background: #ffa31a;
-  border-radius: 5px;
-  color: #011226;
-  font-size: 16px;
-  font-weight: 600;
-  word-wrap: break-word;
-  width: 187.99px;
-  height: 52.22px;
+.hero-section .strt-btn {
+  background-color: #007bff;
+  color: #fff;
   border: none;
+  font-weight: 600;
+  width: 170px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  outline: none;
+  z-index: 99;
 }
 
-.hero-circle {
+.hero-section .strt-btn:hover {
+  background-color: #0056b3;
+  box-shadow: 2px 2px 0 #91c6ff;
+  /* box-shadow: 2px 2px 0 #007bff; */
+}
+
+.hero-section .hero-circle {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -58,7 +130,7 @@ body {
   margin-left: -80px;
 }
 
-.mo-hero-circle {
+.hero-section .mo-hero-circle {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -71,7 +143,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.hero-circle .arrow {
+.hero-section .hero-circle .arrow {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -84,25 +156,39 @@ body {
 
 @media screen and (max-width: 768px) {
   .hero-section {
-    padding: 30px 10px;
+    height: 100%;
+  }
+  .star {
+    width: 3px !important;
+    height: 3px !important;
+  }
+  .hero-section .hero {
+    flex-direction: column !important;
   }
 
-  .hero-section .container-fliud {
-    padding: 20px 7px !important;
+  .hero-section .left .text-content {
+    padding-top: 50px !important;
   }
-  .hero-section .mob-relative {
+
+  .hero-section .left {
+    padding: 10px 9% !important;
+  }
+
+  .hero-section .right {
+    justify-content: flex-start;
+    align-items: flex-start !important;
+    padding: 0 !important;
+    height: 100% !important;
+    margin-top: -100px !important;
+  }
+
+  /* .hero-section .mob-relative {
     display: flex;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
   }
-  .hero-section .right {
-    display: none;
-  }
-
-  .hero-section .hero-content {
-    width: 100%;
-  }
+  
   .hero-section .mobile-show img {
     width: 100%;
     max-width: 500px;
@@ -119,9 +205,10 @@ body {
     width: 35px;
     height: 100%;
     bottom: -55% !important;
-  }
+  } */
+
   .hero-section .strt-btn {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 
@@ -171,6 +258,62 @@ body {
 
 .approach-section .section-heading {
   text-align: center;
+}
+
+.approach-section .dot-movmt {
+  display: flex;
+  justify-content: center;
+  padding: 40px 10px;
+  margin-top: 70px;
+  position: relative;
+}
+
+.approach-section .dot-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  z-index: 300;
+}
+
+.approach-section .dot-button {
+  width: 30px;
+  height: 30px;
+  background-color: #007bff;
+  border-radius: 50%;
+  cursor: pointer !important;
+  transition: transform 0.3s;
+}
+
+.approach-section .selected-dot {
+  position: relative;
+  background-color: #91c6ff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  z-index: 250;
+  cursor: pointer !important;
+}
+
+.approach-section .selected-dot::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.approach-section .line {
+  position: absolute;
+  top: 61px;
+  height: 5px;
+  background-color: #007bff;
+  width: 130px;
+  transition: width 0.3s, transform 0.3s; /* Add transition for width and position */
 }
 
 .approach-section .box:hover {

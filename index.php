@@ -17,14 +17,14 @@
 </head>
 <body>
 
-
+<main>
   <?php  
     include("components/navbar/navbar.php"); 
   ?>
    
    <section class="hero-section" id="get-started">
-   <div class="container-fliud" >
-    <div class="mob-relative">
+   <div class="fliud" >
+    <!-- <div class="mob-relative">
         <div class="mobile-show">
           <img src="images/Rectangle 9.png"/>
         </div>
@@ -33,28 +33,30 @@
         <path d="M29.8412 72.3481V2.20786M1.64326 41.6617L29.8412 72.3481L58.0391 41.6617" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-    </div> 
-    <div class="row" id="home-top">
+    </div>  -->
+    <div class="hero" id="home-top">
       <div class="col-md-6 left hero-content">
         <!-- Left Div Content -->
-        <div class="mt-5" style="color: white; padding: 20px;" >
+        <div class="text-content" style="color: white;" >
         <div style="width: 100%; color: white; font-size: 48px; font-weight: 700; line-height: 58px;">We Are A Crowd <span style="color: #3CC6F2">Marketing Real Estate</span> Community</div>
-          <p class="mt-3">A crowd marketing community founded with the objective of providing comprehensive training to dedicated and disciplined individuals in the realm of real estate, empowering them to transition into micro real estate investors, thereby enabling the cultivation of generational wealth  creation.</p>
-        <button class="strt-btn">Join Now</button>
+          <p class="mt-3" style="color: white; font-size: 17px; line-height: 28px;">A comprehensive training for dedicated and disciplined individuals, empowering them to transition into micro real estate investors.</p>
+        <button class="strt-btn mt-3">Join Now</button>
         </div>
       </div>
       <div class="col-md-6 right hero-content">
         <!-- Right Div Content -->
-        <div class="desk-relative">
-        <div class="desktop-show" style="padding: 20px;">
-          <img src="images/Rectangle 9.png"/>
+        <!-- <div class="desk-relative"> -->
+
+        <div class="desktop-show">
+          <img src="images/hrim.png"/>
         </div>
-        <div class="hero-circle">
+
+        <!-- <div class="hero-circle">
         <svg class="arrow" width="60" height="74" viewBox="0 0 60 74" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M29.8412 72.3481V2.20786M1.64326 41.6617L29.8412 72.3481L58.0391 41.6617" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-      </div>
-        </div>
+        </div> -->
+        <!-- </div> -->
         
       </div>
     </div>
@@ -63,7 +65,7 @@
     </div>
   </div>
    </section>
-
+</main>
    <section class="counter-section" id="numbers">
    <div class="container-fliud" >
     <div class="row">
@@ -93,6 +95,14 @@
    <section class="approach-section" id="our-approach">
      <div class="section-heading">
        <h1 style="color: white; font-size: 48px; font-weight: 700; line-height: 58px; word-wrap: break-word">Our Approach in <span style="color: #3CC6F2;">3 Simple Steps</span></h1>
+      </div>
+      <div class="dot-movmt">
+      <div class="dot-buttons">
+    <div class="dot-button" data-target="div1"></div>
+    <div class="dot-button selected-dot" data-target="div2"></div>
+    <div class="dot-button" data-target="div3"></div>
+  </div>
+  <div class="line"></div>
       </div>
       <div class="container-fliud" id="appr-head">
             <div class="row">
@@ -195,7 +205,7 @@
             </div>
             <div class="row accordion mac pt-3">
                   <div class="col-md-6 left">
-                    <h4 id="element1">03.</h4>
+                    <h4 id="element1">04.</h4>
                     <div class="box">
                     <h1 id="element1">Forced Appreciation</h1>
                     <p>Crowd10</p>
@@ -216,7 +226,7 @@
             </div>
             <div class="row accordion mac pt-3">
                   <div class="col-md-6 left">
-                    <h4 id="element1">03.</h4>
+                    <h4 id="element1">05.</h4>
                     <div class="box">
                     <h1 id="element1">Leverages and Diversifications</h1>
                     <p>Crowd10</p>
@@ -238,7 +248,7 @@
         </div>
     </section>
 
-    <section class="earn-section" id="earn">
+    <!-- <section class="earn-section" id="earn">
       <div class="container-fiuld">
         <div class="row  pt-3">
                   <div class="col-md-6 ">
@@ -274,7 +284,8 @@
             </div>
       </div>
   
-    </section>
+    </section> -->
+
       <div id="connect">
           <?php  
           include("components/footer/footer.php"); 

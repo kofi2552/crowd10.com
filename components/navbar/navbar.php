@@ -1,4 +1,4 @@
-  <header>
+  <header class="navigate">
     <a class="logo" href="/"><img src="images/c10L.svg" alt="CROWD10"></a>
         <nav>
                 <ul class="nav__links">
